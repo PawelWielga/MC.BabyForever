@@ -1,0 +1,15 @@
+# Ignore build outputs and temporary files
+Release/
+*.zip
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
