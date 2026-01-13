@@ -1,98 +1,53 @@
-# BabyForever Datapack
+# 🐾 BabyForever Datapack 🐣
 
-A Minecraft 1.21.4+ datapack that prevents animals named "pimpek" from growing up.
+Have you ever found a baby cow or a tiny puppy in Minecraft and wished they would just stay small and adorable forever? Now they can! 
 
-## Building the Datapack
+**BabyForever** is a lightweight Minecraft datapack that lets you freeze time for your favorite tiny friends. Simply give them a name, and they will stay babies for as long as you want! 💖
 
-To create a distributable ZIP file:
+---
 
-**Option 1: Double-click**
-- Simply double-click `build.bat`
+## 🧸 How to use
 
-**Option 2: PowerShell**
-```powershell
-.\build.ps1
-```
+1. **Find a baby animal** (any ageable mob like a cow, pig, wolf, etc.).
+2. **Grab a nametag** and name it **"pimpek"**.
+3. **Tag your baby animal!**
+4. ✨ *Poof!* ✨ Your animal will now stay small and cute forever!
 
-This will create `BabyForever-v1.0.zip` in the `Release/` folder.
-
-## Creating GitHub Releases (Automatic)
-
-This repository includes GitHub Actions workflow for automatic release creation.
-
-### First-time setup:
-
-1. **Create repository on GitHub and push your code:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/YourUsername/BabyForever.git
-   git push -u origin main
-   ```
-
-### Creating a release:
-
-2. **Create and push a version tag:**
-   ```bash
-   git tag v1.0
-   git push origin v1.0
-   ```
-
-3. **Done!** GitHub Actions will automatically:
-   - ✅ Build the datapack ZIP
-   - ✅ Create a GitHub Release
-   - ✅ Add download link and installation instructions
-
-### Future updates:
-
-When you make changes:
-```bash
-git add .
-git commit -m "Your changes"
-git tag v1.1
-git push origin v1.1
-```
-
-A new release will appear automatically in the "Releases" section!
-
-For more details, see [RELEASE.md](RELEASE.md).
-
-## Installation
+## 📥 Installation
 
 **From ZIP file:**
-1. Copy `BabyForever-v1.0.zip` (or `BabyForever` folder) to the `datapacks` folder in your Minecraft world
+1. Download the latest `BabyForever.zip` from [Releases](../../releases).
+2. Copy it to the `datapacks` folder in your Minecraft world:
    - Path: `.minecraft/saves/[world_name]/datapacks/`
-2. Start the world or use the `/reload` command if the world is already running
-3. Verify the datapack is working with: `/datapack list`
+3. Start the world or use the `/reload` command if the world is already running.
+4. Verify the datapack is loaded with: `/datapack list`
 
-## Usage
+## ⚙️ TECHNICAL STUFF
 
-1. Find a baby animal
-2. Use a nametag with the name "pimpek" on the animal
-3. The animal will never grow up!
-
-## How it works
-
-The datapack uses highly optimized checking every **1 minute** (1200 ticks), which virtually eliminates any performance impact on the game.
+### How it works
+The datapack uses a highly optimized system that checks your animals only once every **1 minute** (1200 ticks). This means it has **zero impact** on your game's performance! 🚀
 
 For each animal named "pimpek":
-- Sets the NBT `Age` value to the minimum value (-2147483648)
-- Locks the age using `AgeLocked:1b`
+- Sets their internal `Age` to the minimum possible value.
+- Locks their age using the `AgeLocked` tag.
 
-This prevents natural growth progression without affecting game performance!
+### Supported animals
+- 🐄 Cows, Mooshrooms
+- 🐷 Pigs, Sheep, Chickens
+- 🐇 Rabbits
+- 🐎 Horses, Donkeys, Mules
+- 🦙 Llamas, Camels
+- 🐕 Wolves, Cats, Ocelots, Foxes
+- 🐼 Pandas, Polar Bears
+- 🐢 Turtles, 🐝 Bees, 🐸 Frogs
+- 🐐 Goats, 🐢 Armadillos
+- 🐈 Axolotls
+- 👹 Hoglins, Striders
+- 🐘 Sniffers
+- 👨‍🌾 Villagers and Zombie Villagers
 
-## Supported animals
+### Minecraft Version
+Compatible with **Minecraft 1.21.4** and newer versions (pack_format: 48).
 
-- Cows, sheep, pigs, chickens
-- Rabbits, horses, donkeys, mules, llamas
-- Cats, wolves, ocelots, foxes, pandas
-- Polar bears, turtles, bees
-- Goats, axolotls, hoglins, striders
-- Camels, sniffers, armadillos
-- Mooshrooms
-- Villagers and zombie villagers
-
-## Minecraft Version
-
-Compatible with Minecraft 1.21.4 and newer versions (pack_format: 48)
+---
+*For building instructions and deployment guides, please see [RELEASE.md](RELEASE.md).*
