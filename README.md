@@ -8,10 +8,21 @@ Have you ever found a baby cow or a tiny puppy in Minecraft and wished they woul
 
 ## 🧸 How to use
 
-1. **Find a baby animal** (any ageable mob like a cow, pig, wolf, etc.).
-2. **Grab a nametag** and name it **"pimpek"**.
-3. **Tag your baby animal!**
-4. ✨ *Poof!* ✨ Your animal will now stay small and cute forever!
+There are two ways to keep your animals tiny:
+
+### 1. 🧊 Freeze a Baby ('pimpek')
+- **Find a baby animal** (any ageable mob like a cow, pig, wolf, etc.).
+- **Grab a nametag** and name it **"pimpek"**.
+- **Tag your baby animal!**
+- ✨ *Poof!* ✨ Your animal will now stay small and cute forever! (Adults named "pimpek" are not affected).
+
+### 2. ⏳ Rejuvenate an Adult ('flux')
+- **Find any animal** (even a fully grown adult!).
+- **Grab a nametag** and name it **"flux"**.
+- **Tag the animal!**
+- ⚡ *Zap!* ⚡ The animal will immediately turn into a baby, its name will change to **"pimpek"**, and it will stay a baby forever!
+
+---
 
 ## 📥 Installation
 
@@ -25,24 +36,24 @@ Have you ever found a baby cow or a tiny puppy in Minecraft and wished they woul
 ## ⚙️ TECHNICAL STUFF
 
 ### How it works
-The datapack uses a highly optimized system that checks your animals only once every **1 minute** (1200 ticks). This means it has **zero impact** on your game's performance! 🚀
+The datapack uses a highly optimized system that checks your animals once every **1 second** (20 ticks). This ensures nametags take effect almost instantly while maintaining **zero impact** on your game's performance! 🚀
 
-For each animal named "pimpek":
-- Sets their internal `Age` to the minimum possible value.
-- Locks their age using the `AgeLocked` tag.
+**Behaviors:**
+- **"pimpek" (on babies)**: Sets their internal `Age` to the minimum value and sets `AgeLocked:1b`.
+- **"flux" (on anyone)**: Forces `Age` to minimum, sets `AgeLocked:1b`, and changes `CustomName` to "pimpek".
 
 ### Supported animals
 - 🐄 Cows, Mooshrooms
-- 🐷 Pigs, Sheep, Chickens
+- 🐷 Pigs, Sheep, Chickens, Piglins
 - 🐇 Rabbits
 - 🐎 Horses, Donkeys, Mules
 - 🦙 Llamas, Camels
 - 🐕 Wolves, Cats, Ocelots, Foxes
 - 🐼 Pandas, Polar Bears
-- 🐢 Turtles, 🐝 Bees, 🐸 Frogs
+- 🐢 Turtles, 🐝 Bees, 🐸 Frogs, 🧊 Tadpoles
 - 🐐 Goats, 🐢 Armadillos
 - 🐈 Axolotls
-- 👹 Hoglins, Striders
+- 👹 Hoglins, Zoglins, Striders
 - 🐘 Sniffers
 - 👨‍🌾 Villagers and Zombie Villagers
 

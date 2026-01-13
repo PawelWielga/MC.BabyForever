@@ -26,6 +26,10 @@
         "minecraft:mooshroom",
         "minecraft:camel",
         "minecraft:sniffer",
-        "minecraft:armadillo"
+        "minecraft:armadillo",
+        "minecraft:frog",
+        "minecraft:tadpole",
+        "minecraft:zoglin",
+        "minecraft:piglin"
     ]
 }

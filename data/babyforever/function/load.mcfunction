@@ -1,5 +1,5 @@
 # Initialize datapack
-tellraw @a {"text":"[BabyForever] Datapack loaded! Animals named 'pimpek' will never grow up.","color":"green"}
+tellraw @a {"text":"[BabyForever] Datapack loaded! 'pimpek' locks age, 'flux' rejuvenates.","color":"green"}
 
 # Start checking cycle
-schedule function babyforever:tick 1200t
+schedule function babyforever:tick 20t replace
