@@ -8,7 +8,7 @@ Write-Host ""
 
 # Configuration
 $datapackName = "BabyForever"
-$outputFileName = "BabyForever-v1.1.1.zip"
+$outputFileName = "BabyForever-v1.1.2.zip"
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $releaseDir = Join-Path $scriptDir "Release"
 $outputPath = Join-Path $releaseDir $outputFileName
