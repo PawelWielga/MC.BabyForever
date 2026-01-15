@@ -18,7 +18,7 @@ Run the script directly from your terminal:
 **What it does:**
 - Validates that `pack.mcmeta` and `data/` exist.
 - Creates a `Release/` folder if it doesn't exist.
-- Packages everything into `Release/BabyForever-v1.0.zip`.
+- Packages everything into `Release/BabyForever-v1.1.4.zip`.
 
 ---
 
@@ -44,8 +44,8 @@ If you haven't pushed the code to GitHub yet:
 ### Creating a new Release:
 1. **Create and push a version tag:**
    ```bash
-   git tag v1.0
-   git push origin v1.0
+   git tag v1.1.4
+   git push origin v1.1.4
    ```
 2. **Check the "Actions" tab:** GitHub will automatically build the ZIP and create a new Release with the file attached! ✨
 
@@ -58,7 +58,7 @@ If you prefer to create releases via the GitHub web interface:
 1. **Build the ZIP** using the local build scripts described above.
 2. **Go to GitHub** and navigate to your repository's "Releases" section.
 3. Click **"Draft a new release"**.
-4. Create a new tag (e.g., `v1.0`).
+4. Create a new tag (e.g., `v1.1.4`).
 5. Upload the ZIP file found in the `Release/` folder.
 6. **Publish Release**.
 
